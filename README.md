@@ -8,6 +8,10 @@
 
 ```>> confluent-hub install confluentinc/kafka-connect-rabbitmq:latest```
 
+#### Haber creado el topic en Kafka que reciba los mensajes desde la carpeta de Confluent:
+
+```>> ./bin/kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic actividad_topic ```
+
 #### La idea de este ejercicio es tener Rabbitmq en un Docker y que envíe mensajes a un cluster Kafka en otro servidor.
 
 
